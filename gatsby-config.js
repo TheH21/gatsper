@@ -12,6 +12,17 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
+    // These are working demo credentials, try them out!
+
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `https://gatsby.ghost.io`,
+        contentApiKey: `9cc5c67c358edfdd81455149d0`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
